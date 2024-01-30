@@ -1,0 +1,13 @@
+/* Estilos para pantallas grandes (md y más grandes) */
+@media (min-width: 768px) {
+    .col-md-6 {
+        text-align: left;  /* Alinea el texto a la izquierda en pantallas grandes */
+    }
+}
+
+/* Estilos para pantallas más pequeñas (md y menores) */
+@media (max-width: 767px) {
+    .col-md-6 {
+        text-align: center;  /* Alinea el texto al centro en pantallas pequeñas */
+    }
+}
