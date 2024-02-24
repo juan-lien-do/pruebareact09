@@ -6,7 +6,7 @@ const ListadoInputs = ({listaPersonas, cantPersonas, iterador}) => {
     }*/
 
     return (
-        <div className="table-responsive">
+        <div className="table-responsive my-5">
             
             <table className="table table-hover table-sm table-bordered table-striped">
                 <thead>
@@ -16,9 +16,9 @@ const ListadoInputs = ({listaPersonas, cantPersonas, iterador}) => {
                 <tbody>
                    {Array.from({length:cantPersonas}, (_, index) => index).map(
                         (i) => (
-                            <tr key={i} className={iterador === i ? "bg-warning" : ""}>
-                                <td >{listaPersonas[i]?.nombre}</td>
-                                <td >${listaPersonas[i]?.monto}</td>
+                            <tr key={i} >
+                                <td className={iterador === i ? "bg-warning !important" : ""}>{listaPersonas[i]?.nombre}</td>
+                                <td className={iterador === i ? "bg-warning !important" : ""}>${listaPersonas[i]?.monto}</td>
                             </tr>
                         )
                     )
