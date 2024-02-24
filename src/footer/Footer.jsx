@@ -1,10 +1,9 @@
 export default function Footer () {
     return(
-        <footer className=" bg-dark">
+        <footer className="bg-dark" style={{position:"absolute", bottom:0, width:"100%"}}>
             <hr></hr>
-            <div className="container py-4 py-md-5 px-4 px-md-3">
-                <div className="row">
-                    <div className="col-6 col-lg-2 offset-lg-1 mb-3 text-primary">
+            <div className="container py-4 py-md-5 px-4 px-md-3 ">
+                    <div className="col-6 col-lg-2 mb-3 text-primary  mx-auto">
                         <h5>Informacion</h5>
                         <ul className="list-unstyled">
                             <li className="mb-2"><a href="#">Contacto</a></li>
@@ -12,7 +11,6 @@ export default function Footer () {
                             <li className="mb-2"><a href="#">Preguntas frecuentes{" (FAQ)"}</a></li>
                         </ul>
                     </div>
-                </div>
             </div>
         </footer>
     );

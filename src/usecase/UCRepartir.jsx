@@ -12,14 +12,17 @@ export default function UCRepartir(){
     
 
 
-    return (confirmacionDatos) ? (<UCOutputData ></UCOutputData>) :
+    return (confirmacionDatos) ? (<UCOutputData listaPersonas={aportePersonas} cantPersonas={cantPersonas}
+        
+        />) :
     (<UCInputData 
         cantPersonas={cantPersonas}
         setCantPersonas={setCantPersonas}
         aportePersonas={aportePersonas}
         setAportePersonas={setAportePersonas}
         iterador={iterador}
-        setIterador={setIterador}/>);
+        setIterador={setIterador}
+        setConfirmacionDatos={setConfirmacionDatos}/>);
 
 
 

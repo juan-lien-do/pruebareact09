@@ -13,10 +13,10 @@ export default function Landing() {
                             <img className="img-fluid" src={imagen} alt="imagen de ejemplo" />
                         </div>
                         <div className="col-md-6">
-                            <h1 className='card p-3 bg-gradient-primary my-4'>¿Se te complica calcular los gastos de la salida con tus amigos después de pagar?</h1>
+                            <h1 className='card p-3 my-4'>¿Se te complica calcular los gastos de la salida con tus amigos después de pagar?</h1>
                             <h3>Probá nuestra app web para repartir los gastos equitativamente {":)"} </h3>
                             <NavLink className="nav-link " to="/repartir">
-                                <button type="button" className="btn btn-primary btn-lg my-4 fs-3 fw-bold text-black mx-auto">Adelante</button>
+                                <div className="btn btn-primary btn-lg my-4 fs-3 fw-bold text-black mx-auto">Adelante</div>
                             </NavLink>
                         </div>
                     </div>
@@ -25,23 +25,23 @@ export default function Landing() {
             <hr className='w-75 mx-auto my-5'></hr>
             <hr className='w-50 mx-auto my-5'></hr>
             <hr className='w-25 mx-auto my-5'></hr>
-            <h3 className='h2 text-align-center container-fluid text-center mt-5 mb-4'>¿Porqué usar nuestra app?</h3>
+            <h3 className='h2 text-align-center text-center mt-5 mb-4'>¿Porqué usar nuestra app?</h3>
             <div className='container-fluid my-3'>
                 <div className='w-75 mx-auto'>
                     <div className='row align-items-center w-80'>
-                        <div className='col my-2'>
+                        <div className='col-md-4 my-2'>
                             <div className='card '>
                                 <p className='mx-auto h3 my-2'>Comodidad</p>
                                 <p className='mx-auto ms-4'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
                             </div>
                         </div>
-                        <div className='col my-2'>
+                        <div className='col-md-4 my-2'>
                             <div className='card bg-secondary text-white'>
                                 <p className='mx-auto h3 my-2'>Justicia</p>
                                 <p className='mx-auto ms-4'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
                             </div>
                         </div>
-                        <div className='col my-2'>
+                        <div className='col-md-4 my-2'>
                             <div className='card '>
                                 <p className='mx-auto h3 my-2'>Accesibilidad</p>
                                 <p className='mx-auto ms-4'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
