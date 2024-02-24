@@ -1,9 +1,9 @@
 const ListadoInputs = ({listaPersonas, cantPersonas, iterador}) => {
 
     //<button onClick={()=>mostrarLista()}>debug</button>
-    const mostrarLista = () => {
+    /*const mostrarLista = () => {
         console.log(listaPersonas);
-    }
+    }*/
 
     return (
         <div className="table-responsive">

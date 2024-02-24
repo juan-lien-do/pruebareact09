@@ -24,9 +24,6 @@ export default function UCOutputData({listaPersonas, cantPersonas}) {
             }
             prom /= cantPersonas;
             promedio = prom;
-            //debug
-            console.log(promedio);
-            console.log(arrayResponsabilidades);
 
         // Generar array con responsabilidades [{nombre:"carlos", responsabilidad:-2000}] carlos debe 2000 pesos.
         // Hay que restarle el promedio
@@ -71,9 +68,7 @@ export default function UCOutputData({listaPersonas, cantPersonas}) {
                 }
                 
             }
-            console.log(arrayPagosRef);
             setArrayPagos(arrayPagosRef.current)
-            console.log(arrayPagos);
             setMostrarPagos(true);
     };
 

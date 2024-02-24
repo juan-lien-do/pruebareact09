@@ -43,7 +43,6 @@ export default function UCInputData({
   };
 
   const handleConfirmacion = () => {
-    console.log("Debugging");
   
     setAportePersonas((prev) => {
       const newArray = [...prev];
