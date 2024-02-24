@@ -16,7 +16,7 @@ const DownloadPDFButton = () => {
   };
 
   return (
-    <button onClick={downloadPDF}>
+    <button onClick={downloadPDF} className="btn btn-primary mx-auto fw-bold">
       Descargar PDF
     </button>
   );
