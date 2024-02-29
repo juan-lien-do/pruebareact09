@@ -79,7 +79,8 @@ export default function UCOutputData({listaPersonas, cantPersonas}) {
                 <div className="col"></div>
                 <div className="col-md-6">
                     <ListadoInputs listaPersonas={listaPersonas} cantPersonas={cantPersonas}></ListadoInputs>
-                    <button className="btn btn-primary mx-auto fw-bold" onClick={()=>generarPagos()}>Generar pagos</button><br/>
+                    {!mostrarPagos ? <button className="btn btn-primary mx-auto fw-bold" onClick={()=>generarPagos()}>Generar pagos</button> : <hr/>}
+                    
                     {mostrarPagos ? <div> <ListadoPagos arrayPagos={arrayPagos}/>  <DownloadPDFButton></DownloadPDFButton> </div>  : ""
 
                     }

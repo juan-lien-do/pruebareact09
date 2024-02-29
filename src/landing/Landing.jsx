@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import imagen from './logov2_720.png';
+import imagen from './logov2_720_transparent.png';
 import './Landing.css';  // Archivo de estilos CSS separado
 
 export default function Landing() {
@@ -10,14 +10,17 @@ export default function Landing() {
                 <div className=" mx-auto align-items-center" style={{width:'85%'}}>
                     <div className="row align-items-center">
                         <div className="col-md-6 mb-3 mb-md-0">
-                            <img className="img-fluid" src={imagen} alt="imagen de ejemplo" />
+                            <img className="img-fluid " src={imagen} alt="imagen de ejemplo" />
                         </div>
                         <div className="col-md-6">
-                            <h1 className='card p-3 my-4'>¿Se te complica calcular los gastos de la salida con tus amigos después de pagar?</h1>
-                            <h3>Probá nuestra app web para repartir los gastos equitativamente {":)"} </h3>
-                            <NavLink className="nav-link " to="/repartir">
-                                <div className="btn btn-primary btn-lg my-4 fs-3 fw-bold text-black mx-auto">Adelante</div>
-                            </NavLink>
+                            <h1 className='card p-3 my-4 stack-shadow-primary'>¿Se te complica calcular los gastos de la salida con tus amigos después de pagar?</h1>
+                            <h3 className=''>Probá nuestra app web para repartir los gastos equitativamente {":)"} </h3>
+                            <span className='px-5'>
+                                <NavLink className="btn btn-primary btn-lg my-4 fs-3 fw-bold text-black mx-auto" to="/repartir">
+                                    Adelante
+                                </NavLink>
+                            </span>
+                            
                         </div>
                     </div>
                 </div>
@@ -30,20 +33,21 @@ export default function Landing() {
                 <div className='w-75 mx-auto'>
                     <div className='row align-items-center w-80'>
                         <div className='col-md-4 my-2'>
-                            <div className='card '>
-                                <p className='mx-auto h3 my-2'>Comodidad</p>
+                            <div className='card stack-card-gray'>
+                                <p className='mx-auto h3 my-2 stack-shadow-primary'>Comodidad</p>
                                 <p className='mx-auto ms-4'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
                             </div>
                         </div>
                         <div className='col-md-4 my-2'>
-                            <div className='card bg-secondary text-white'>
-                                <p className='mx-auto h3 my-2'>Justicia</p>
+                            <div className='card bg-secondary text-white stack-card-gray'>
+                                <p className='mx-auto h3 my-2 stack-shadow-primary'>Justicia</p>
                                 <p className='mx-auto ms-4'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
                             </div>
                         </div>
-                        <div className='col-md-4 my-2'>
-                            <div className='card '>
-                                <p className='mx-auto h3 my-2'>Accesibilidad</p>
+                        <div className='col-md-4 my-2 '>
+                            <div className='card stack-card-gray'>
+                                <div className='shadow-sm bg-primary rounded'></div>
+                                <p className='mx-auto h3 my-2 stack-shadow-primary'>Accesibilidad</p>
                                 <p className='mx-auto ms-4'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
                             </div>
                         </div>
@@ -51,29 +55,35 @@ export default function Landing() {
                 </div>
             </div>
             <hr className='w-75 mx-auto my-5'></hr>
-            <p className='h2 text-center my-3 underlined'>Reviews de usuarios </p>
-            <div className='container'>
-                <div className='w-75 row mx-auto my-5'>
-                    <div className='col my-2'>
-                        <div className='card bg-dark text-light '>
-                            <p className='mx-auto ms-4 my-3 h5 fw-normal'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
+            <p className='h2 text-center my-3 underlined animacion-entrada'>Reviews de usuarios </p>
+            <div className='container-fluid mx-auto'>
+                <div className='w-75 mx-auto my-5'>
+                    <div className='row align-items-center w-80'>
+                        <div className='col-sm-1'></div>
+                        <div className='col-md-5 mt-2 mb-4 stack-card-gray'>
+                            <div className='card bg-dark text-light '>
+                                <p className='mx-auto ms-4 my-3 h5 fw-normal'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
+                            </div>
+                            <div className='border border-dark border-top-0 bg-secondary rounded-bottom mx-auto me-2 w-25'>
+                                
+                                <p className='text-center h4 text-white'>
+                                    John
+                                </p>
+                            </div>
+                            
                         </div>
-                        <div className='border border-top-0 bg-secondary rounded-bottom mx-auto me-2 w-25'>
-                            <p className='text-center h4 text-white'>
-                                John
-                            </p>
+                        <div className='col-md-5 mt-2 mb-4 stack-card-gray '>
+                            <div className='card bg-dark text-light'>
+                                <p className='mx-auto ms-4 my-3 h5 fw-normal'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
+                            </div>
+                            <div className='border border-dark border-top-0 bg-secondary rounded-bottom mx-auto me-2 w-25'>
+                                <p className='text-center h4 text-white '>
+                                    Jane
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className='col my-2'>
-                        <div className='card bg-dark text-light'>
-                            <p className='mx-auto ms-4 my-3 h5 fw-normal'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa suscipit minus rem eligendi similique eaque mollitia, eius voluptate laudantium quia maiores, aliquam sit.</p>
-                        </div>
-                        <div className='border border-top-0 bg-secondary rounded-bottom mx-auto me-2 w-25'>
-                            <p className='text-center h4 text-white'>
-                                Jane
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 

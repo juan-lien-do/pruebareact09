@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 //import '../App.css'
 export default function Menu() {
     return (
-        <nav className="navbar navbar-expand-xxxl bg-dark text-white py-0 " style={{position:"sticky",top:"0",zIndex:3}}>
+        <nav className="shadow navbar navbar-expand-xxxl bg-dark text-white py-0 " style={{position:"sticky",top:"0",zIndex:3}}>
             <span className="text-primary ms-4 fw-bold fs-3">
                 <NavLink className="nav-link " to="/inicio">
                     Repartir

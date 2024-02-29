@@ -1,3 +1,25 @@
+@import '../SCSS/custom.css';
+
+
+
+/* Define la animación */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Aplica la animación al elemento */
+.animacion-entrada {
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+
 /* Estilos para pantallas grandes (md y más grandes) */
 @media (min-width: 768px) {
     .col-md-6 {
@@ -11,3 +33,77 @@
         text-align: center;  /* Alinea el texto al centro en pantallas pequeñas */
     }
 }
+
+.rotated{
+    transform: rotate(-5deg);
+}
+
+.stack-card-primary {
+    /*box-shadow: var(--bs-primary) 10px 10px, var(--bs-primary) 10px 10px, var(--bs-primary) 15px 15px, var(--bs-primary) 20px 20px, var(--bs-primary) 25px 25px;*/
+    filter: drop-shadow(var(--bs-primary) 10px 10px);
+  }
+
+  .stack-card-warning {
+    filter: drop-shadow(var(--bs-warning) 10px 10px);
+  }
+  .stack-card-gray {
+    filter: drop-shadow(var(--bs-gray) 10px 10px);
+  }
+
+.stack-shadow-primary{
+    box-shadow: var(--bs-primary) 10px 10px;
+}
+.stack-shadow-gray{
+  box-shadow: var(--bs-gray) 10px 10px;
+}
+
+
+.stack-shadow-warning{
+    box-shadow: var(--bs-warning) 10px 10px;
+}
+
+.estrella {
+    /* Modify size here: */
+    --size: 50px;
+    --half-size: calc(var(--size) / 2);
+
+    position: relative;
+    display: block;
+    color: #333;
+    width: 0px;
+    height: 0px;
+    border-right: var(--half-size) solid transparent;
+    border-bottom: calc(var(--half-size) * 0.7) solid #333;
+    border-left: var(--half-size) solid transparent;
+    transform: rotate(35deg);
+}
+.estrella:before {
+    border-bottom: calc(var(--half-size) * 0.8) solid #333;
+    border-left: calc(var(--half-size) * 0.3) solid transparent;
+    border-right: calc(var(--half-size) * 0.3) solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: calc(var(--half-size) * 0.45 * -1);
+    left: calc(var(--half-size) * 0.65 * -1);
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+.estrella:after {
+    position: absolute;
+    display: block;
+    color: #333;
+    top: calc(var(--half-size) * 0.03);
+    left: calc(var(--half-size) * -1.05);
+    width: 0px;
+    height: 0px;
+    border-right: var(--half-size) solid transparent;
+    border-bottom: calc(var(--half-size) * 0.7) solid #333;
+    border-left: var(--half-size) solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+  

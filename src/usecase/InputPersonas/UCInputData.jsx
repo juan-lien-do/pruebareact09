@@ -122,9 +122,9 @@ export default function UCInputData({
     <div className="h-75 w-75 mx-auto py-5 px-auto container-fluid" >
         <div className="row" >
             <div className="col"></div>
-            <div className="col" style={{width:"400px"}}>
+            <div className="col stack-card-gray" style={{width:"400px"}}>
                 <div className="card mt-5 mb-3 mx-auto text-center h2 w-100 p-2 " >
-                    <p >¿Cuantos son?</p>
+                    <p >¿Cuántos son?</p>
                 </div>
                 <div className="card mb-5 mx-auto  text-center h2 w-100 p-2">
                     <input type="number" className="text-center mb-3" value={cantPersonas} onChange={handleCantPersonasChange} />
@@ -142,11 +142,11 @@ export default function UCInputData({
       
     </div>
   ) : (
-    <div className="h-75 w-75 mx-auto py-5 px-auto container-fluid">
+    <div className="h-75 w-75 mx-auto py-5 px-auto container-fluid ">
       <div className="row" >
         <div className="col"></div>
         <div className="col py-2" style={{width:"400px"}}>
-          <div className="card mx-auto px-4 py-3">
+          <div className="card mx-auto px-4 py-3 stack-card-gray">
             Nombre:<input type="text" placeholder="Nombre" value={currentAportePersona.nombre} onChange={handleCurrentNombre} />
             <br />
             Cuánto aportó:<input type="number" value={currentAportePersona.monto} onChange={handleCurrentMonto} />

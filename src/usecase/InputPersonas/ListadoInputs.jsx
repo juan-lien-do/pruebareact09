@@ -6,9 +6,9 @@ const ListadoInputs = ({listaPersonas, cantPersonas, iterador}) => {
     }*/
 
     return (
-        <div className="table-responsive my-5">
+        <div className="table-responsive mt-5 mb-3">
             
-            <table className="table table-hover table-sm table-bordered table-striped">
+            <table className="table table-hover table-sm table-bordered table-striped  stack-shadow-gray">
                 <thead>
                     <th> Nombre</th>
                     <th> Aporte</th>
