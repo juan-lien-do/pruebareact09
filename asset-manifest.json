@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/repartir/static/css/main.ba3b534e.css",
-    "main.js": "/repartir/static/js/main.a4b2277f.js",
+    "main.css": "/repartir/static/css/main.eead3e92.css",
+    "main.js": "/repartir/static/js/main.b00f5cf9.js",
     "static/js/703.81cbf792.chunk.js": "/repartir/static/js/703.81cbf792.chunk.js",
     "static/js/379.84808888.chunk.js": "/repartir/static/js/379.84808888.chunk.js",
     "static/js/787.83834ae3.chunk.js": "/repartir/static/js/787.83834ae3.chunk.js",
@@ -9,21 +9,21 @@
     "static/media/fa-brands-400.ttf": "/repartir/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
     "static/media/fa-solid-900.woff2": "/repartir/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
     "static/media/fa-brands-400.woff2": "/repartir/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2",
-    "static/media/logov2_720.png": "/repartir/static/media/logov2_720.2374a09ebbb1a073ef9a.png",
     "static/media/fa-regular-400.ttf": "/repartir/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
+    "static/media/logov2_720_transparent.png": "/repartir/static/media/logov2_720_transparent.46bb8c3cba8160f782fc.png",
     "static/media/fa-regular-400.woff2": "/repartir/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2",
     "static/media/fa-v4compatibility.ttf": "/repartir/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/repartir/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "static/media/logo.svg": "/repartir/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/repartir/index.html",
-    "main.ba3b534e.css.map": "/repartir/static/css/main.ba3b534e.css.map",
-    "main.a4b2277f.js.map": "/repartir/static/js/main.a4b2277f.js.map",
+    "main.eead3e92.css.map": "/repartir/static/css/main.eead3e92.css.map",
+    "main.b00f5cf9.js.map": "/repartir/static/js/main.b00f5cf9.js.map",
     "703.81cbf792.chunk.js.map": "/repartir/static/js/703.81cbf792.chunk.js.map",
     "379.84808888.chunk.js.map": "/repartir/static/js/379.84808888.chunk.js.map",
     "787.83834ae3.chunk.js.map": "/repartir/static/js/787.83834ae3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba3b534e.css",
-    "static/js/main.a4b2277f.js"
+    "static/css/main.eead3e92.css",
+    "static/js/main.b00f5cf9.js"
   ]
 }
