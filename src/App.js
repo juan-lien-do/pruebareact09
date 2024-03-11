@@ -9,12 +9,12 @@ import UCRepartir from './usecase/UCRepartir';
 
 function App() {
   return (
-    <div className='bg-light' style={{position:"relative", paddingBottom:"16em"}}>
+    <div className='fondo-pagina' style={{position:"relative", paddingBottom:"16em"}}>
       <div style={{minHeight:"100vh"}}>
         <Router >
           <Menu/>
           <Routes>
-            <Route path="/" element={<Landing />} exact />
+            <Route path="/home" element={<Landing />} exact />
             <Route path='/repartir' element={<UCRepartir />} exact></Route>
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
