@@ -2,19 +2,23 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import imagen from './logov2_720_transparent.png';
 import './Landing.css';  // Archivo de estilos CSS separado
+import MovingBackground from "./movingBackground/MovingBackground.jsx"
 
 export default function Landing() {
     return (
         <main className=''>
-            <div className="container-fluid my-5">
-                <div className=" mx-auto align-items-center" style={{width:'85%'}}>
+            <div className=" container-fluid my-5 position-relative" >
+                <div className="position-absolute top-0 start-0 w-100 h-100" >
+                    <MovingBackground />
+                </div>
+                <div id="contenido" className="render-above mx-auto align-items-center " style={{width:'85%', zIndex:2, position:"relative"}}>
                     <div className="row align-items-center">
                         <div className="col-md-6 mb-3 mb-md-0">
                             <img className="img-fluid " src={imagen} alt="imagen de ejemplo" />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 p-4">
                             <h1 className='card p-3 my-4 stack-shadow-primary'>¿Se te complica calcular los gastos de la salida con tus amigos después de pagar?</h1>
-                            <h3 className=''>Probá nuestra app web para repartir los gastos equitativamente {":)"} </h3>
+                            <h3 className='text-white'>Probá nuestra app web para repartir los gastos equitativamente {":)"} </h3>
                             <span className='px-5'>
                                 <NavLink className="btn btn-primary btn-lg my-4 fs-3 fw-bold text-black mx-auto" to="/repartir">
                                     Adelante
@@ -24,12 +28,13 @@ export default function Landing() {
                         </div>
                     </div>
                 </div>
+                
             </div>
             <hr className='w-75 mx-auto my-5'></hr>
             <hr className='w-50 mx-auto my-5'></hr>
             <hr className='w-25 mx-auto my-5'></hr>
             <h3 className='h2 text-align-center text-center mt-5 mb-4'>¿Porqué usar nuestra app?</h3>
-            <div className='container-fluid my-3'>
+            <div className='container-fluid my-3 fondo-desplazado-light'>
                 <div className='w-75 mx-auto'>
                     <div className='row align-items-center w-80'>
                         <div className='col-md-4 my-2'>

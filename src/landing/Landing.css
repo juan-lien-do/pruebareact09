@@ -1,6 +1,44 @@
 @import '../SCSS/custom.css';
 
 
+.fondo-desplazado-light{
+  box-shadow: var(--bs-secondary) 0px 20px;
+  background-image: linear-gradient(0deg, var(--bs-secondary) 0%, #5550 95%);
+}
+
+.fondo-pagina{
+  background-color: var(--bs-light);
+  background-image: linear-gradient(0deg, var(--bs-light) 0%, var(--bs-gray) 95%
+  );
+}
+
+
+
+#contenido{
+  z-index: 2 !important;
+}
+
+.fondo-contenido{
+  background-color: var(--bs-secondary);
+}
+
+/* scrollbar */
+html{
+  
+  scrollbar-width: auto;
+  scrollbar-color: var(--bs-secondary) var(--bs-dark);
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: var(--bs-primary);
+}
+html::-webkit-scrollbar-thumb:hover{
+  background-color: var(--bs-primary);
+}
+html::-webkit-scrollbar-track{
+  background-color: var(--bs-primary);
+}
+
 
 /* Define la animación */
 @keyframes fadeInUp {
@@ -37,6 +75,7 @@
 .rotated{
     transform: rotate(-5deg);
 }
+
 
 .stack-card-primary {
     /*box-shadow: var(--bs-primary) 10px 10px, var(--bs-primary) 10px 10px, var(--bs-primary) 15px 15px, var(--bs-primary) 20px 20px, var(--bs-primary) 25px 25px;*/
