@@ -14,9 +14,9 @@ function App() {
         <Router >
           <Menu/>
           <Routes>
-            <Route path="/home" element={<Landing />} exact />
-            <Route path='/repartir' element={<UCRepartir />} exact></Route>
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/repartir/inicio" element={<Landing />} exact />
+            <Route path='/repartir/repartir' element={<UCRepartir />} exact></Route>
+            <Route path="/repartir/*" element={<Navigate to="/" replace />} />
           </Routes>
         </Router>
       </div>
