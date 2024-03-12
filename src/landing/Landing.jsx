@@ -20,7 +20,7 @@ export default function Landing() {
                             <h1 className='card p-3 my-4 stack-shadow-primary'>¿Se te complica calcular los gastos de la salida con tus amigos después de pagar?</h1>
                             <h3 className='text-white'>Probá nuestra app web para repartir los gastos equitativamente {":)"} </h3>
                             <span className='px-5'>
-                                <NavLink className="btn btn-primary btn-lg my-4 fs-3 fw-bold text-black mx-auto" to="/repartir">
+                                <NavLink className="btn btn-primary btn-lg my-4 fs-3 fw-bold text-black mx-auto" to="/repartir/adelante/">
                                     Adelante
                                 </NavLink>
                             </span>
