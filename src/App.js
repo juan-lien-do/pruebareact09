@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/repartir/inicio" element={<Landing />} exact />
             <Route path='/repartir/repartir' element={<UCRepartir />} exact></Route>
-            <Route path="/repartir/*" element={<Navigate to="/" replace />} />
+            <Route path="/repartir/*" element={<Navigate to="/repartir/inicio" replace />} />
           </Routes>
         </Router>
       </div>
