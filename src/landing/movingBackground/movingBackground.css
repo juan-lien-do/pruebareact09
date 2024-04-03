@@ -18,13 +18,15 @@
   }
 
 .mosaico{
-    position: absolute;
+    display: flex;
+    position: relative;
     animation: moverse 5s linear infinite;
     z-index: 0;
     font-size:xx-large ;
     text-align: center;
     width: 150px;
-    filter: blur(3px)
+    filter: blur(3px);
+    margin-bottom: 1rem;
 }
 
 .mosaico:nth-child(1){
