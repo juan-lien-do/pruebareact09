@@ -1,0 +1,9 @@
+@import '../SCSS/custom.css';
+
+.shadow-logo{
+    #Layer_1{
+        fill: var(--bs-primary);
+
+    }
+    /*filter: drop-shadow(var(--bs-primary) 5px 0px);*/
+}
