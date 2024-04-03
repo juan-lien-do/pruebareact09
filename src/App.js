@@ -6,6 +6,7 @@ import Landing from './landing/Landing'
 import Footer from './footer/Footer';
 import Menu from './navbar/Navbar';
 import UCRepartir from './usecase/UCRepartir';
+import Faq from './faq/Faq.jsx';
 
 function App() {
   return (
@@ -15,12 +16,14 @@ function App() {
           <Menu/>
           <Routes>
             <Route path="/repartir/" element={<Landing />} exact />
+            <Route path="/faq/" element={<Faq />} exact />
             <Route path='/repartir/adelante/' element={<UCRepartir />} exact></Route>
             <Route path="/*" element={<Navigate to="/repartir/" replace />} />
           </Routes>
+          <Footer/>
         </Router>
       </div>
-      <Footer/>
+      
     </div>
   );
 }
