@@ -81,7 +81,7 @@ export default function UCOutputData({listaPersonas, cantPersonas}) {
                     <ListadoInputs listaPersonas={listaPersonas} cantPersonas={cantPersonas}></ListadoInputs>
                     {!mostrarPagos ? <button className="btn btn-primary mx-auto fw-bold" onClick={()=>generarPagos()}>Generar pagos</button> : <hr/>}
                     
-                    {mostrarPagos ? <div> <ListadoPagos arrayPagos={arrayPagos}/>  <DownloadPDFButton></DownloadPDFButton> </div>  : ""
+                    {mostrarPagos ? <div className="pb-5"> <ListadoPagos arrayPagos={arrayPagos}/>  <DownloadPDFButton></DownloadPDFButton> </div>  : ""
 
                     }
                 </div>

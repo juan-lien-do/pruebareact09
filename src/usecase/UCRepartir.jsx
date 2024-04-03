@@ -2,7 +2,7 @@ import {  useState } from 'react'
 import UCInputData from './InputPersonas/UCInputData';
 import UCOutputData from './OutputTransaccion/UCOutputData'
 export default function UCRepartir(){
-    const [cantPersonas, setCantPersonas] = useState(0); // cuantas personas son?
+    const [cantPersonas, setCantPersonas] = useState(2); // cuantas personas son?
     const [iterador, setIterador] = useState(-1);
     const [aportePersonas, setAportePersonas] = useState([]); //array de objetos con nombre y aporte $
     const [confirmacionDatos, setConfirmacionDatos] = useState(false); // Cambiar de componente?
