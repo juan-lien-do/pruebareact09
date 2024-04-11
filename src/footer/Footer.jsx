@@ -14,7 +14,7 @@ export default function Footer() {
                         <li className="mb-2"><a href="https://www.linkedin.com/in/juanestebanliendo/" target="_blank">Contacto</a></li>
                         <li className="mb-2"><a href="https://github.com/juan-lien-do" target="_blank">Otros proyectos</a></li>
                         <li className="mb-2">
-                            <NavLink to="/faq/" >
+                            <NavLink to="/repartir/faq/" >
                             Preguntas frecuentes
                             </NavLink>
                             </li>

@@ -15,7 +15,7 @@ export default function Menu() {
             <div className="d-flex me-4 my-2">
                 <ul className="navbar-nav">
                     <li className="navbar-item btn btn-primary py-0 fw-bold fs-5">
-                        <NavLink className="nav-link text-black" to="/faq/">
+                        <NavLink className="nav-link text-black" to="/repartir/faq/">
                             ¿Cómo se usa?
                         </NavLink>
                     </li>
